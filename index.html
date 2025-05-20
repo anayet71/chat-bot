@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Bikes</a>
+
+                    <div class="mega-menu">
+                        <div class="mega-menu-column">
+                            <h3 class="mega-menu-title">Mountain Bikes</h3>
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Trail Bikes</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Downhill Bikes</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Cross Country</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Fat Bikes</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3 class="mega-menu-title">Road Bikes</h3>
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Racing</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Endurance</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Gravel</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Cyclocross</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3 class="mega-menu-title">Electric Bikes</h3>
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">City E-Bikes</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Mountain E-Bikes</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Road E-Bikes</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Folding E-Bikes</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-menu-column">
+                            <h3 class="mega-menu-title">Accessories</h3>
+                            <ul class="mega-menu-list">
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Helmets</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Lights</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Locks</a></li>
+                                <li class="mega-menu-item"><a href="#" class="mega-menu-link">Bike Parts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Chat Icon -->
+    <div class="chat-icon" id="chatIcon">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+        </svg>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>Chat with us</span>
+            <button class="close-button" id="closeChat">&times;</button>
+        </div>
+
+        <div class="quick-questions">
+            <button class="quick-question-btn" data-question="What are your working hours?">Working Hours</button>
+            <button class="quick-question-btn" data-question="Do you offer test rides?">Test Rides</button>
+            <button class="quick-question-btn" data-question="What's your return policy?">Return Policy</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be added here -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <span>Chat with us</span>
+            <button class="close-button" id="closeChat">&times;</button>
+        </div>
+
+        <!-- Quick Questions Section -->
+        <div class="quick-questions">
+            <button class="quick-question-btn" data-question="What are your working hours?">Working Hours</button>
+            <button class="quick-question-btn" data-question="Do you offer test rides?">Test Rides</button>
+            <button class="quick-question-btn" data-question="What's your return policy?">Return Policy</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            <button class="send-button" id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+
+
+ 
+</body>
+
+</html>
